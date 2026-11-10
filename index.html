@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CanvPet: a study pet for Canvas</title>
+<meta name="description" content="A golden retriever puppy on your Canvas pages: see what's coming up, study together, and take a calm minute when you need one. Free Chrome extension.">
+<link rel="icon" href="img/icon128.png">
+<style>
+  :root { --ink: #1f1b16; --muted: #6f675d; --line: #e6dccb; --panel: #fff9ef; --gold: #f0a531; --green: #2e7d5b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #fff; color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { border-bottom: 1px solid var(--line); }
+  .bar { max-width: 900px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; gap: 10px; font-weight: 750; }
+  .bar img { width: 32px; height: 32px; }
+  .hero { max-width: 900px; margin: 0 auto; padding: 40px 20px 20px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: center; }
+  .hero h1 { font-size: 42px; line-height: 1.1; margin: 0 0 12px; }
+  .hero p { color: var(--muted); font-size: 19px; margin: 0 0 20px; }
+  .hero img { width: 100%; max-width: 360px; justify-self: center; }
+  .soon { display: inline-block; padding: 10px 18px; border-radius: 12px; background: var(--green); color: #fff; font-weight: 700; }
+  .cards { max-width: 900px; margin: 0 auto; padding: 10px 20px 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid #d9c7a8; border-top: 4px solid var(--gold); border-radius: 14px; padding: 16px 18px; }
+  .card h2 { font-size: 18px; margin: 0 0 4px; }
+  .card p { margin: 0; color: var(--muted); font-size: 16px; }
+  .privacy { max-width: 900px; margin: 0 auto 40px; padding: 0 20px; color: var(--muted); font-size: 16px; }
+  a { color: #1f5fa8; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer div { max-width: 900px; margin: 0 auto; padding: 16px 20px; }
+  @media (max-width: 680px) { .hero { grid-template-columns: 1fr; } .hero h1 { font-size: 34px; } .cards { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header><div class="bar"><img src="img/icon128.png" alt="">CanvPet</div></header>
+<section class="hero">
+  <div>
+    <h1>A study pet for Canvas</h1>
+    <p>A golden retriever puppy lives on your Canvas pages. It shows what's coming up, studies with you, and gets fed when you turn work in.</p>
+    <span class="soon">Coming soon to the Chrome Web Store</span>
+  </div>
+  <img src="img/puppy.webp" alt="A golden retriever puppy sitting and smiling">
+</section>
+<section class="cards">
+  <div class="card"><h2>What's coming up</h2><p>The next three things due, from your own Canvas to-do list. Tick them off as you finish.</p></div>
+  <div class="card"><h2>Study together</h2><p>Start a session, or just 10 minutes when starting is the hard part. Your puppy lies down beside you and keeps you company.</p></div>
+  <div class="card"><h2>A calm minute</h2><p>A daily "How are you today?" and one minute of breathing together when you need it.</p></div>
+  <div class="card"><h2>A real pet feel</h2><p>Pet it, shake paws, play fetch on your breaks. It gets hungry until you turn something in.</p></div>
+</section>
+<p class="privacy">Private by design: CanvPet has no servers and no accounts, and it never sends your information anywhere. What it keeps stays on your computer. <a href="privacy.html">Read the privacy policy</a>.</p>
+<footer><div>CanvPet · <a href="privacy.html">Privacy</a> · CanvPet is not affiliated with, endorsed by, or sponsored by Instructure, Inc. Canvas is a trademark of Instructure, Inc.</div></footer>
+</body>
+</html>
